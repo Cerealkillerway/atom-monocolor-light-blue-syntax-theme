@@ -1,0 +1,15 @@
+{
+  "name": "monocolor-light-blue-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "light blue single color syntax highlight theme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/Cerealkillerway/atom-monocolor-light-blue-syntax-theme.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
