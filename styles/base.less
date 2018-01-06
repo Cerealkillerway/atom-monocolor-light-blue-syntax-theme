@@ -1,7 +1,7 @@
 @import "syntax-variables";
 
 
-atom-text-editor, :host {
+atom-text-editor,atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
@@ -63,11 +63,11 @@ atom-text-editor .search-results .marker.current-result .region,
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
-.comment {
+.syntax--comment {
   color: @light-gray;
 }
 
-.keyword {
+.syntax--keyword {
   color: @light-blue-darken-4;
 
   &.control {
@@ -87,11 +87,11 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
-.storage {
+.syntax--storage {
   color: @light-blue-darken-2;
 }
 
-.constant {
+.syntax--constant {
   color: @light-blue-lighten-1;
 
   &.character.escape {
@@ -111,7 +111,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
-.variable {
+.syntax--variable {
   color: @light-blue-accent-2;
 
   &.interpolation {
@@ -123,12 +123,12 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
-.invalid.illegal {
+.syntax--invalid.syntax--illegal {
   background-color: @light-blue;
   color: @syntax-background-color;
 }
 
-.string {
+.syntax--string {
   color: @light-blue-lighten-3;
 
 
@@ -147,12 +147,12 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .punctuation {
   &.definition {
-    &.comment {
+    &.syntax--comment {
       color: @light-gray;
     }
 
-    &.string,
-    &.variable,
+    &.syntax--string,
+    &.syntax--variable,
     &.parameters,
     &.array {
       color: @syntax-text-color;
@@ -251,7 +251,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
-.none {
+.syntax--none {
   color: @syntax-text-color;
 }
 
@@ -295,7 +295,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
-.source.gfm .markup {
+.syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.heading {
     color: @light-blue-darken-2;
